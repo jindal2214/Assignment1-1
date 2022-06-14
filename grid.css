@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'krylon';
+    src: url('...Assignment_1/Fonts/Krylon-Regular');
+}
+body{
+    margin: 0px;
+}
+
+.header {
+    word-spacing: 40px;
+    margin-top: 30px;
+    text-align: center;
+    border: solid 1px purple;
+    border-radius: 7px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.header a:hover {
+    color: rgb(245, 81, 163);
+}
+
+.hero {
+    border-radius: 7px;
+    border: 1px solid beige;
+    margin-top: 15px;
+    height: 300px;
+    width: 100%;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: bisque;
+    text-align: center;
+}
+
+.simple {
+    border-radius: 7px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(170, 170, 243);
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    width: 60%;
+    grid-gap: 10px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+.gridcontainer div {
+    border: 1px solid purple;
+}
+
+.gridcontainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.complex {
+    border-radius: 7px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(170, 170, 243);
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    width: 60%;
+    margin: auto;
+    padding: 3px;
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.gridbox div {
+    border: 1px solid purple;
+}
+.gridbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.gridbox div:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gridbox div:nth-child(6) {
+    grid-row: span 2;
+}
+.gridbox div:nth-child(7) {
+    grid-column: span 2;
+}
